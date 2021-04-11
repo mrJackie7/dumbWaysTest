@@ -1,4 +1,11 @@
-let randomCharTriangle = (n) => {
+/*
+  Membutuhkan prompt-sync untuk bisa mengambil input dari user.
+  Harus import dulu modulnya dari npm
+*/
+const prompt = require('prompt-sync')({sigint: true})
+
+// Sebuah fungsi untuk membuat segitiga secara random
+const randomCharTriangle = (n) => {
   let string = ""
   let count = Math.floor(Math.random() * n <= 2 ? 2 : n)
   // External loop
@@ -17,4 +24,5 @@ let randomCharTriangle = (n) => {
   console.log(string);
 }
 
-randomCharTriangle(5)
+let yourNumber = prompt('Masukan nomor untuk generate segitiga-mu: ')
+randomCharTriangle(yourNumber)

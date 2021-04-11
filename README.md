@@ -31,6 +31,8 @@ console.log(`${kata kunci yang ada dalam array} & ${kata kunci yang di check (wo
 
 ## Nomor 3. Piramid Berpola Huruf Acak
 
-Penyelesaian: Segitiga dengan huruf random
+Penyelesaian: Sebuah fungsi untuk generate segitiga dengan huruf secara acak. dengan nomor yang diinputkan, kemudian didalam fungsi randomCharTriangle di buat hitungan random untuk nantinya bisa di-pick kode huruf dari String.fromCharCode(nomor yang di random generate). dengan melakukan looping seperti membuat segitiga biasa, akan dibuatkan segitiga dengan char random.
+
+note: ini tentu akan mengalami revisi.
 
 ## Nomor 4. Simulasi Website Buku
