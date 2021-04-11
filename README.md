@@ -36,3 +36,7 @@ Penyelesaian: Sebuah fungsi untuk generate segitiga dengan huruf secara acak. de
 note: ini tentu akan mengalami revisi.
 
 ## Nomor 4. Simulasi Website Buku
+
+Penyelesaian: Dalam folder nomor 4a, berisi file sql berisi database book. Dalam folder 4b, berisi kodingan program web untuk simulasi website buku.
+
+note: akan ada perubahan lagi.
