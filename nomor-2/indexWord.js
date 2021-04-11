@@ -4,13 +4,18 @@
 */
 const prompt = require('prompt-sync')({sigint: true})
 
+// sebuah fungsi untuk mengechek kata-kata dengan array kata kunci
 const checkIndex = (stringKey, word) => {
+  //jika input kosong, print 'Harap input dengan benar'
   if(word === '') {
-    console.log('false')
+    console.log('Harap input dengan benar')
   }else{
+    // mengubah kalimat menjadi array string, dengan memisahkan berdasarkan " " dengan metode split()
     let arr = stringKey.split(" "), res = 0
 
+    //check kata per array index dengan looping for
     for(let i = 0; i < arr.length; i++){
+      // print jika kata yang diperiksa memiliki index dari array kunci
       console.log(`${arr[i]} & ${word} => ${word.includes(arr[i]) ? res = 'true' : res = 'false'}`)
     }
   }
