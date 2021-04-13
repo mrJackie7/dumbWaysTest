@@ -18,38 +18,49 @@ USE `books_db`;
 
 -- Dumping structure for table books_db.book_tb
 CREATE TABLE IF NOT EXISTS `book_tb` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `book_name` varchar(50) NOT NULL DEFAULT 'Some Book',
+  `book_id` int NOT NULL AUTO_INCREMENT,
+  `book_name` varchar(200) NOT NULL DEFAULT 'some',
   `category_id` int NOT NULL DEFAULT '0',
   `writer_id` int NOT NULL DEFAULT '0',
-  `publication_year` varchar(50) NOT NULL DEFAULT 'Some Book',
-  `img_url` varchar(50) NOT NULL DEFAULT 'Some Book',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `publication_year` varchar(50) NOT NULL DEFAULT 'some',
+  `img_url` varchar(50) NOT NULL DEFAULT 'some',
+  PRIMARY KEY (`book_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table books_db.book_tb: ~5 rows (approximately)
+-- Dumping data for table books_db.book_tb: ~0 rows (approximately)
 /*!40000 ALTER TABLE `book_tb` DISABLE KEYS */;
-INSERT INTO `book_tb` (`id`, `book_name`, `category_id`, `writer_id`, `publication_year`, `img_url`) VALUES
-	(1, 'Belajar Bersama VSCode', 2, 2, '2020', 'here'),
-	(2, 'Why am I Procarsting? Just Work, Damnit', 3, 1, '2019', 'there'),
-	(3, 'Time Traveler: Recaptured Fragments of Memories', 1, 3, '2015', 'now'),
-	(4, 'Dont Blame Them, Just Suck It', 3, 1, '2015', 'hehe'),
-	(5, 'Kotlin is Fun and EZ!', 2, 2, '2016', 'that');
+INSERT INTO `book_tb` (`book_id`, `book_name`, `category_id`, `writer_id`, `publication_year`, `img_url`) VALUES
+	(1, 'The Stuble Art of Not Giving F*ck', 3, 8, '2018', 'stuble-art-of-no-give.jpg'),
+	(3, 'The Badass Mafia Queen', 1, 3, '2012', 'sample-cover.jpg'),
+	(4, 'Old Book Bilble', 5, 5, '1190', 'cover-bible.jpg'),
+	(5, 'Belajar Kotlin', 2, 2, '2018', 'kotlinbook.jpg'),
+	(6, 'Book Title: Tagline Goes Here', 3, 1, '2011', 'sampling-book-cover.png'),
+	(7, 'Belajar VSCode', 2, 2, '2018', 'vs-code.jpg'),
+	(8, 'Atasi Malasmu Dengan Buku INI!', 3, 1, '2021', 'my-book-cover.jpg');
 /*!40000 ALTER TABLE `book_tb` ENABLE KEYS */;
 
 -- Dumping structure for table books_db.category_tb
 CREATE TABLE IF NOT EXISTS `category_tb` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `category_id` int NOT NULL AUTO_INCREMENT,
   `category_name` varchar(50) NOT NULL DEFAULT 'Some Book',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table books_db.category_tb: ~3 rows (approximately)
+-- Dumping data for table books_db.category_tb: ~12 rows (approximately)
 /*!40000 ALTER TABLE `category_tb` DISABLE KEYS */;
-INSERT INTO `category_tb` (`id`, `category_name`) VALUES
+INSERT INTO `category_tb` (`category_id`, `category_name`) VALUES
 	(1, 'Novel'),
 	(2, 'Teknologi'),
-	(3, 'Self Development');
+	(3, 'Self Development'),
+	(4, 'Sejarah'),
+	(5, 'Religion'),
+	(6, 'Entertainment'),
+	(7, 'Shoping'),
+	(8, 'Inggris'),
+	(9, 'Majalah'),
+	(10, 'Koran'),
+	(11, 'Kitab'),
+	(12, 'Biografi');
 /*!40000 ALTER TABLE `category_tb` ENABLE KEYS */;
 
 -- Dumping structure for table books_db.writer_tb
@@ -57,14 +68,18 @@ CREATE TABLE IF NOT EXISTS `writer_tb` (
   `writer_id` int NOT NULL AUTO_INCREMENT,
   `writter_name` varchar(50) NOT NULL DEFAULT 'Some Name',
   PRIMARY KEY (`writer_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table books_db.writer_tb: ~3 rows (approximately)
+-- Dumping data for table books_db.writer_tb: ~6 rows (approximately)
 /*!40000 ALTER TABLE `writer_tb` DISABLE KEYS */;
 INSERT INTO `writer_tb` (`writer_id`, `writter_name`) VALUES
 	(1, 'Joshua Chistianto'),
 	(2, 'Indrico Jowensen'),
-	(3, 'Evelyn Natania');
+	(3, 'Evelyn Natania'),
+	(4, 'Hayam Wuruk'),
+	(5, 'Bernadette IV'),
+	(8, 'Mark Manson'),
+	(9, 'Garit Dewana');
 /*!40000 ALTER TABLE `writer_tb` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

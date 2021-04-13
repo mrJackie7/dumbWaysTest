@@ -1,5 +1,7 @@
 # Test Dumb Ways Kloter 6 Batch 23
+
 ##### Sabtu, 10 April 2021
+
 ##### Updated: 11 April 2021
 
 ```catatan
@@ -14,9 +16,11 @@ Test ini dibuat dan dijalankan menggunakan bahasa program Javascript. Untuk nomo
 Penyelesaian: Sebuah fungsi hitungVoucher akan menerima 2 input: tipe kupon (opsi satu atau 2, jika bukan antara 2 pilihan itu, program tidak akan dijalankan) dan jumlah uang yang dibayarkan (tipe angka (Number)). Dalam fungsi hitungVoucher akan melakukan pengkondisian sesuai dengan tipe vouchernya. Jika memilih opsi 1, akan masuk fungsi DumbWaysJos. Jika memilih opsi 2, akan masuk fungsi DombWaysMantap.
 
 Pada masing-masing fungsi DumbWaysJos dan DumbWaysMantap, input jumlah uang akan diperiksa aga kupon bisa benar-benar digunakan. jika uangnya kurang untuk memenuhi syarat minimal, tidak akan mendapat potongan (diskon = 0) dan jika uangnya mmemenuhi syarat minimal dan potongan yang dihitung melebihi yang sudah ditentukan (contoh diskon >= 20000) maka potongan akan ditetapkan kembali ke maksimum potongan (diskon = DumbWaysJos ? 20000 : DumbWaysMantap ? 40000 : 0). Kembalian akan dihitung sebagai berikut.
+
 ```kembalian
 kembalian = jumlah uang - (jumlah uang - diskon)
-``` 
+```
+
 ## Nomor 2. Pencocokan Kata
 
 Penyelesaian: Sebuah fungsi checkIndex(stringKey, word) untuk memeriksa suatu kata input (word) dengan array kata kunci (stringKey). Fungsi ini akan memeriksa bila word ada kata yang masuk, suatu proses dalam fungsi bisa dijalankan. Jika tidak akan di print "harap input dengan benar".
@@ -33,10 +37,8 @@ console.log(`${kata kunci yang ada dalam array} & ${kata kunci yang di check (wo
 
 Penyelesaian: Sebuah fungsi untuk generate segitiga dengan huruf secara acak. dengan nomor yang diinputkan, kemudian didalam fungsi randomCharTriangle di buat hitungan random untuk nantinya bisa di-pick kode huruf dari String.fromCharCode(nomor yang di random generate). dengan melakukan looping seperti membuat segitiga biasa, akan dibuatkan segitiga dengan char random.
 
-note: ini tentu akan mengalami revisi.
-
 ## Nomor 4. Simulasi Website Buku
 
-Penyelesaian: Dalam folder nomor 4a, berisi file sql berisi database book. Dalam folder 4b, berisi kodingan program web untuk simulasi website buku.
+Penyelesaian: Dalam folder nomor 4a, berisi file sql berisi database book. Dalam folder 4b, berisi kodingan program web untuk simulasi website buku. bahasa program yang digunakan adalah javascript dan php sebagai back-end (AJAX-PHP)
 
-note: akan ada perubahan lagi.
+Update: Bahasa program yang digunakan kini sudah di ganti full javascript (Node.JS) dengan bantuan framework UI dari Bootstrap dan Express.JS sebagai ramework back-end.
